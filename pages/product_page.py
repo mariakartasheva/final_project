@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 
 class ProductPage(BasePage):
     def add_product_to_basket(self):
-        basket = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
-        basket.click()
+        add_to_basket = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
+        add_to_basket.click()
 # Сообщение о том, что товар добавлен в корзину. Название товара в сообщении должно совпадать с тем товаром, который вы действительно добавили.
 
     def should_be_added_to_basket_message(self):
