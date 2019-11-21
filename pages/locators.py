@@ -13,15 +13,14 @@ class BasketPageLocators():
     EMPTY_MESSAGE = (By.CSS_SELECTOR, '#content_inner p')
     BASKET_ITEM = (By.CSS_SELECTOR, '.basket-items')
 
-# class MainPageLocators():
-
 
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, '#login_form')
     REGISTER_FORM = (By.CSS_SELECTOR, '#register_form')
     REGISTER_EMAIL = (By.CSS_SELECTOR, '[name="registration-email"]')
     REGISTER_PASSWORD = (By.CSS_SELECTOR, '[name="registration-password1"]')
-    REGISTER_PASSWORD_CONFIRM = (By.CSS_SELECTOR, '[name="registration-password2"]')
+    REGISTER_PASSWORD_CONFIRM = (
+        By.CSS_SELECTOR, '[name="registration-password2"]')
     REGISTER_SUBMIT = (By.CSS_SELECTOR, '[name="registration_submit"]')
 
 
